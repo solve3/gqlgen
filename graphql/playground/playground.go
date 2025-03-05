@@ -1,10 +1,19 @@
 package playground
 
 import (
+	"embed"
 	"html/template"
 	"net/http"
 	"net/url"
 )
+
+//go:embed /statics/*
+var StaticFiles embed.FS
+
+// Handler 返回静态文件服务器
+func StaticHandler() http.Handler {
+	return http.FileServer(http.FS(StaticFiles))
+}
 
 var page = template.Must(template.New("graphiql").Parse(`<!DOCTYPE html>
 <html>
