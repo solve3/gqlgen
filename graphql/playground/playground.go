@@ -7,7 +7,7 @@ import (
 	"net/url"
 )
 
-//go:embed /statics/*
+//go:embed statics/*
 var StaticFiles embed.FS
 
 // Handler 返回静态文件服务器
