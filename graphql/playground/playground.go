@@ -25,18 +25,15 @@ var page = template.Must(template.New("graphiql").Parse(`<!DOCTYPE html>
 	</style>
 	<script
 		src="https://cdn.bootcdn.net/ajax/libs/react/18.2.0/umd/react.production.min.js"
-		integrity="{{.reactSRI}}"
 		crossorigin="anonymous"
 	></script>
 	<script
 		src="https://cdn.bootcdn.net/ajax/libs/react-dom/18.2.0/umd/react-dom.production.min.js"
-		integrity="{{.reactDOMSRI}}"
 		crossorigin="anonymous"
 	></script>
     <link
 		rel="stylesheet"
 		href="https://cdn.bootcdn.net/ajax/libs/graphiql/3.8.3/graphiql.min.css"
-		integrity="{{.cssSRI}}"
 		crossorigin="anonymous"
 	/>
   </head>
@@ -45,7 +42,6 @@ var page = template.Must(template.New("graphiql").Parse(`<!DOCTYPE html>
 
 	<script
 		src="https://cdn.bootcdn.net/ajax/libs/graphiql/3.8.3/graphiql.min.js"
-		integrity="{{.jsSRI}}"
 		crossorigin="anonymous"
 	></script>
 
