@@ -50,7 +50,7 @@ var page = template.Must(template.New("graphiql").Parse(`<!DOCTYPE html>
     <div id="graphiql">Loading...</div>
 
 	<script
-		src="statics/graphiql.min.js"
+		src="/statics/graphiql.min.js"
 		crossorigin="anonymous"
 	></script>
 
